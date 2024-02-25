@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import erlang from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-erlang/tags). For example,
+
+```javascript
 import erlang from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@v0.2.1-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@esm/index.mjs';
 ```
 
 #### erlang( len, k, lambda\[, options] )
@@ -343,7 +348,7 @@ var sz = random.byteLength;
 <script type="module">
 
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import erlang from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@v0.2.1-esm/index.mjs';
+import erlang from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-erlang@esm/index.mjs';
 
 // Create a function for generating random arrays originating from the same state:
 var random = erlang.factory( 2, 5.0, {
